@@ -7,8 +7,11 @@ import {
   SignedOut,
   UserButton,
 } from "@clerk/nextjs";
+import { checkUser } from "@/lib/checkUser";
 
-const Header = () => {
+const Header = async () => {
+  await checkUser()
+
   return (
     <div>
       <SignedOut>
@@ -18,6 +21,7 @@ const Header = () => {
       <SignedIn>
         <UserButton />
       </SignedIn>
+      <h1>ligma</h1>
     </div>
   );
 };
