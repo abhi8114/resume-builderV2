@@ -1,6 +1,6 @@
 import React from 'react';
 import { CardSpotlight } from './ui/card-spotlight';
-
+import Link from 'next/link';
 
 const HeroSec = () => {
   return (
@@ -15,9 +15,11 @@ const HeroSec = () => {
             Smart Resume Creation - Generate ATS-optimized resumes with AI assistance.
           </p>
           <div className="flex flex-col md:flex-row gap-4">
+            <Link href="/resume">
             <button className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">
               Create Your Resume Now
             </button>
+            </Link>
             <button className="bg-transparent border border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition duration-300">
               Learn More
             </button>

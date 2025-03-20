@@ -9,6 +9,7 @@ import {
   UserButton,
 } from '@clerk/nextjs'
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export const metadata = {
   title: "Resume Builder",
@@ -25,7 +26,11 @@ export default function RootLayout({ children }) {
         <Header />
 
         {children}
+        
+        <Footer />
       </body>
+   
+
     </html>
     </ClerkProvider>
   );
